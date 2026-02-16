@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "Weather_MCP_Server": {
+            "command": "C:\\Users\\mrinm\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.EXE",
+            "args": [
+              "run",
+              "--frozen",
+              "--with",
+              "mcp[cli]",
+              "mcp",
+              "run",
+              "C:\\Users\\mrinm\\Downloads\\MyTraining\\AI_ML_Courses\\mcp_crash_course\\custom_weather_mcp_server\\weather.py"
+            ]
+        }
+  }
+}
