@@ -1,0 +1,9 @@
+langchain-groq
+langchain-openai
+langchain
+mcp-use
+mcp
+mcp[cli]
+python-dotenv
+asyncio
+nest_asyncio

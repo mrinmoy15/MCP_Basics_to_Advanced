@@ -1,0 +1,30 @@
+{
+    "mcpServers": {
+        
+        "ddg-search": {
+            "command": "uvx",
+            "args": ["duckduckgo-mcp-server"]
+        },
+        
+        "kaggle": {
+            "command": "npx",
+            "args": [
+                "mcp-remote",
+                "https://www.kaggle.com/mcp"
+            ]
+        },
+
+        "Weather MCP Server": {
+            "command": "C:\\Users\\mrinm\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.EXE",
+            "args": [
+              "run",
+              "--frozen",
+              "--with",
+              "mcp[cli]",
+              "mcp",
+              "run",
+              "C:\\Users\\mrinm\\Downloads\\MyTraining\\AI_ML_Courses\\mcp_crash_course\\custom_weather_mcp_server\\weather.py"
+            ]
+        }
+  }
+}
