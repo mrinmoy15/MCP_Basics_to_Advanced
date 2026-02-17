@@ -202,8 +202,20 @@ async def run_agent_loop(llm, tools, tool_map, messages, max_iterations=15):
 async def run_memory_chat():
     """Run a chat using MCP tools with conversation memory."""
     load_dotenv()
-    os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
-    os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
+    # setting up environment variables
+    groq_key = os.getenv("GROQ_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY")
+
+    if openai_key is not None:
+        os.environ["OPENAI_API_KEY"] = openai_key
+    else:
+        raise ValueError("OPENAI_API_KEY environment variable is not set.")
+
+    if groq_key is not None:
+        os.environ["GROQ_API_KEY"] = groq_key
+    else:
+        raise ValueError("GROQ_API_KEY environment variable is not set.")
     
     # Configure file path
     config_file = "custom_weather_mcp_server/weather.json"
