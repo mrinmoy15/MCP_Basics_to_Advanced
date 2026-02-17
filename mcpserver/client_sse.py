@@ -33,7 +33,7 @@ async def main(port:int):
 
             # Call our Weather tool
             result = await session.call_tool("get_alerts", arguments={"state":"CA"})
-            print(f"The weather alerts are = {result.content[0].text}")
+            print(f"The weather alerts are = {result.content[0].text}") # type: ignore
 
 
 if __name__ == "__main__":

@@ -7,3 +7,4 @@ mcp[cli]
 python-dotenv
 asyncio
 nest_asyncio
+gradio[mcp]
